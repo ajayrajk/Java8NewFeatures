@@ -11,5 +11,12 @@ public class Main {
         LocalTime time=LocalTime.now();
         System.out.println("Current Time : " + time);
 
+        int day= date.getDayOfMonth();
+        int month= date.getMonthValue();
+        int year=date.getYear();
+
+        System.out.println("Current day : " + day + " month : "+ month +" year :" +year);
+
+
     }
 }
