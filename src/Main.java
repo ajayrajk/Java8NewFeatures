@@ -17,6 +17,12 @@ public class Main {
 
         System.out.println("Current day : " + day + " month : "+ month +" year :" +year);
 
+        int hour=time.getHour();
+        int min=time.getMinute();
+        int sec=time.getSecond();
+        int nano=time.getNano();
+
+        System.out.printf("%d:%d:%d:%d" ,hour,min,sec,nano);
 
     }
 }
