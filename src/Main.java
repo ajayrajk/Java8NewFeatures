@@ -1,4 +1,5 @@
 import java.time.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,6 +63,20 @@ public class Main {
        int d=p1.getYears()*365+p1.getMonths()*30+p1.getDays();
 
        System.out.printf("\n You will be on the earth only %d Days..Hurry up to do important think",d);
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" \n Enter Your Year");
+
+        int nY=sc.nextInt();
+
+        Year y=Year.of(nY);
+
+        if (y.isLeap()){
+            System.out.printf("  %d Year is Leap Year",nY);
+        }
+        else{
+            System.out.printf("%d Year is not Leap Year",nY);
+        }
 
     }
 }
