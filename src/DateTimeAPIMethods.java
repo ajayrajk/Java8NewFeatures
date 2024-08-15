@@ -1,7 +1,8 @@
 import java.time.*;
 import java.util.Scanner;
 
-public class Main {
+public class DateTimeAPIMethods {
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
@@ -57,12 +58,12 @@ public class Main {
         Period p=Period.between(birthDay,today);
         System.out.printf("Your age is %d Years %d Months %d Days ",
                 p.getYears(),p.getMonths(),p.getDays());
-       LocalDate deathDay=LocalDate.of(1989+60,06,15);
-       Period p1=Period.between(today,deathDay);
+        LocalDate deathDay=LocalDate.of(1989+60,06,15);
+        Period p1=Period.between(today,deathDay);
 
-       int d=p1.getYears()*365+p1.getMonths()*30+p1.getDays();
+        int d=p1.getYears()*365+p1.getMonths()*30+p1.getDays();
 
-       System.out.printf("\n You will be on the earth only %d Days..Hurry up to do important think",d);
+        System.out.printf("\n You will be on the earth only %d Days..Hurry up to do important think",d);
 
         Scanner sc=new Scanner(System.in);
         System.out.println(" \n Enter Your Year");
