@@ -79,6 +79,14 @@ public class DateTimeAPIMethods {
             System.out.printf("%d Year is not Leap Year",nY);
         }
 
+        ZoneId zone=ZoneId.systemDefault();
+
+        System.out.println(" \n Zone ID: "+zone);
+
+        ZoneId la=ZoneId.of("America/Los_Angeles");
+        ZonedDateTime zdt=ZonedDateTime.now(la);
+        System.out.println(zdt);
+
     }
 
 }
